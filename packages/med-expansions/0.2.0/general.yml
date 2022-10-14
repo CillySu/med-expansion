@@ -1,0 +1,204 @@
+matches:
+# General Medical
+
+#General Nonmedical
+
+# Blood Test Terminology
+
+  - trigger: ":rft."
+    replace: "renal function test"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":lft."
+    replace: "liver function test"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":shbg"
+    replace: "sex-hormone binding globulin"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: "t3"
+    replace: "triiodothyronine"
+    propagate_case: true
+    word: true
+
+  - trigger: ":hct"
+    replace: "haematocrit"
+    propagate_case: true
+
+  - trigger: ":fbc"
+    replace: "full blood count"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - triggers: [":u/e", "u/e", ":u&e"]
+    replace: "urea & electrolytes"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":crp"
+    replace: "C-reactive protein"
+    propagate_case: true
+
+  - trigger: "tsh"
+    replace: "thyroid-stimulating hormone"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+    word: true
+
+  - trigger: ":esr"
+    replace: "erythrocyte sedimentation rate"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: "t4"
+    replace: "tetraiodothyronine"
+    propagate_case: true
+    word: true
+
+# Days, Weeks, Months shorthand.
+  - trigger: ":1/12"
+    replace: "one month$|$"
+    propagate_case: true
+
+  - trigger: ":2/12"
+    replace: "two month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":3/12"
+    replace: "three month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":4/12$|$"
+    replace: "four month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":5/12"
+    replace: "five month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":6/12"
+    replace: "six month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":7/12"
+    replace: "seven month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":8/12"
+    replace: "eight month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":9/12"
+    replace: "nine month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":10/12"
+    replace: "ten month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":11/12"
+    replace: "11 month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":12/12"
+    replace: "12 month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":1/52"
+    replace: "one week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":2/52"
+    replace: "two week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":3/52"
+    replace: "three week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":4/52"
+    replace: "four week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":5/52"
+    replace: "five week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":6/52"
+    replace: "six week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":7/52"
+    replace: "seven week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":8/52"
+    replace: "eight week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":9/52"
+    replace: "nine week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":10/52"
+    replace: "10 week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":11/52"
+    replace: "12 week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":1/7"
+    replace: "one day"
+    propagate_case: true
+
+  - trigger: ":2/7"
+    replace: "two day"
+    propagate_case: true
+
+  - trigger: ":3/7"
+    replace: "three day"
+    propagate_case: true
+
+  - trigger: ":4/7"
+    replace: "four day"
+    propagate_case: true
+
+  - trigger: ":5/7"
+    replace: "five day"
+    propagate_case: true
+
+  - trigger: ":6/7"
+    replace: "six day"
+    propagate_case: true
+
+  - trigger: ":7/7"
+    replace: "seven day"
+    propagate_case: true
+
