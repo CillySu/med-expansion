@@ -8,7 +8,7 @@ Some acronyms which can reasonably be used in their either unexpanded or in thei
 Areas which are well-covered as of today in this package are bacteria, anatomy, pathology. More will be added as I cover more content in college. Commits are welcome!
 Areas needing work are clinical disciplines as well as nonbacterial microbiology.
 
-##Bacteria
+## Bacteria
 HOW-TO USE:
 In almost all cases, the trigger for the bacterial species will be four characters long.
 For the full name of the bacteria (ie — Staphylococcus aureus as opposed to the shortened S. aureus) use the FIRST LETTER of the GENUS followed by the first three letters of the species.
@@ -138,7 +138,7 @@ For the SHORTENED name (ie —  B. pertussis as opposed to Bordetella pertussis)
 † — These stray somewhat from the rule of "first letter from genus followed by first three letters of species"
 Note that _pneumoniae_ species accept either *pne or *pneu 
 
-##Viruses
+## Viruses
 |          Expansion           |      Viruses       |
 |:----------------------------:|:------------------:|
 |          Adenovirus          | anov, adenov, adev |
@@ -164,5 +164,4 @@ Note that _pneumoniae_ species accept either *pne or *pneu
 |          Rhinovirus          |    rnov, rhinov    |
 |          Togavirus           |       togav        |
 |    Varicella Zoster Virus    |     :vzv, vzov     |
-|:----------------------------:|:------------------:|
 
