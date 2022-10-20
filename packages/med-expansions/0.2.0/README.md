@@ -15,7 +15,8 @@ For the full name of the bacteria (ie — Staphylococcus aureus as opposed to th
 For the SHORTENED name (ie —  B. pertussis as opposed to Bordetella pertussis) use the FIRST LETTER of the GENUS followed by "." followed by the first syllable of the species
     e.g —  c.tet → C. tetani
 
-| Bacteria                     | Expansion                    |
+|           Bacteria           |           Expansion          |
+|:----------------------------:|:----------------------------:|
 |                              |                              |
 | Actinomyces                  | amyc                         |
 | B. anthracis                 | b.ant                        |
@@ -43,7 +44,7 @@ For the SHORTENED name (ie —  B. pertussis as opposed to Bordetella pertussis)
 | C. pneumoniae                | c.pne                        |
 | C. pylori                    | c.pyl                        |
 | C. tetani                    | c.tet                        |
-| C. trachomatis               | c.tra or c.trac or c.trach |
+| C. trachomatis               | c.tra or c.trac or c.trach   |
 | Campylobacter                | camp.                        |
 | Campylobacter coli           | ccol                         |
 | Campylobacter fetus          | cfet                         |
@@ -132,6 +133,7 @@ For the SHORTENED name (ie —  B. pertussis as opposed to Bordetella pertussis)
 | Streptococcus pyogenes       | spyo                         |
 | V. cholerae                  | v.cho or v.chol              |
 | Vibrio cholerae              | vcho or vchol                |
+
 
 † — These stray somewhat from the rule of "first letter from genus followed by first three letters of species"
 Note that _pneumoniae_ species accept either *pne or *pneu 
