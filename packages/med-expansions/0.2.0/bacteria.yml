@@ -7,6 +7,36 @@ matches:
         # e.g —  c.tet → C. tetani
     # THERE IS ONE EXCEPTION — Salmonella enteritidis can, for obvious reasons not be triggered by "sent", and so "senter", "salment" and "salme" all work.
 
+  - trigger: "pplo"
+    replace: "Pleuro Pneumonia Like Organism"
+    propagate_case: true
+    word: true
+
+  - triggers: ["mcata", "mcatar", "morc"]
+    replace: "Moraxella catarrhalis"
+    propagate_case: true
+    word: true
+
+  - triggers: ["cbur", "coxb"]
+    replace: "Coxiella burnetii"
+    propagate_case: true
+    word: true
+
+  - triggers: ["lpne", "lpneu", "legp"]
+    replace: "Legionella pneumoniae"
+    propagate_case: true
+    word: true
+
+  - triggers: ["paer", "paer", "pseuda"]
+    replace: "Pseudomonas aeruginosa"
+    propagate_case: true
+    word: true
+
+  - trigger: "amyc"
+    replace: "Actinomyces"
+    propagate_case: true
+    word: true
+
   - trigger: "amyc"
     replace: "Actinomyces"
     propagate_case: true
@@ -47,7 +77,7 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: "frant"
+  - trigger: "ftul"
     replace: "Francisella tularensis"
     propagate_case: true
     word: true
@@ -97,11 +127,6 @@ matches:
       #Add
   - trigger: "s.mil"
     replace: "S. milleri"
-    propagate_case: true
-    word: true
-
-  - trigger: "s.pyo"
-    replace: "S. pyogenes"
     propagate_case: true
     word: true
 
@@ -355,13 +380,18 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: "mpneu"
+  - triggers: ["mpneu", "mpne"]
     replace: "Mycoplasma pneumoniae"
     propagate_case: true
     word: true
 
   - trigger: "m.pneu"
     replace: "M. pneumoniae"
+    propagate_case: true
+    word: true
+
+  - trigger: "mycob"
+    replace: "Mycobacteri$|$"
     propagate_case: true
     word: true
 
@@ -445,7 +475,7 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: "cpneu"
+  - triggers: ["cpneu", "cpne"]
     replace: "Chlamydophila pneumoniae"
     propagate_case: true
     word: true

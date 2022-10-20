@@ -36,7 +36,7 @@ matches:
     uppercase_style: "capitalize_words"
     word: true
 
-  - trigger: ":q"
+  - trigger: ":q|"
     replace: "Q-wave$|$"
     propagate_case: true
     word: true

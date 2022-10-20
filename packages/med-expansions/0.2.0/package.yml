@@ -1,5 +1,9 @@
 # package med-expansion
-#
+# This YAML file includes basic general medical expansions
+# TOC
+    # Veins, Arteries and Nerves
+    # General / Clinical high-yield
+    # General NON-Clinical but universally useful expansions
 # Veins / Arteries and Nerves
 matches:
 #Arteries
@@ -54,11 +58,11 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: ":eca."
+  - trigger: ":eca"
     replace: "external carotid artery"
     propagate_case: true
 
-  - trigger: ":ica."
+  - trigger: ":ica"
     replace: "internal carotid artery"
     propagate_case: true
 
@@ -178,8 +182,28 @@ matches:
     propagate_case: true
     uppercase_style: "capitalize_words"
 
+  - trigger: "ston"
+    replace: "sympathetic tone"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: "sdri"
+    replace: "sympathetic drive"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
   - trigger: ":psns"
     replace: "parasympathetic nervous system"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+       
+  - trigger: "pdri"
+    replace: "parasympathetic drive"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: "pton"
+    replace: "parasympathetic tone"
     propagate_case: true
     uppercase_style: "capitalize_words"
 
@@ -308,7 +332,7 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: "ix."
+  - trigger: "ix"
     replace: "investigat"
     propagate_case: true
     word: true
@@ -517,17 +541,17 @@ matches:
     propagate_case: true
     word: true
 
-  - trigger: "im."
+  - trigger: ":im"
     replace: "intramuscular|$|$"
     propagate_case: true
     word: true
 
-  - trigger: "iv."
+  - trigger: ":iv"
     replace: "intravascular|$|$"
     propagate_case: true
     word: true
 
-  - trigger: "sq."
+  - trigger: ":sq"
     replace: "sub-cutaneous|$|$"
     propagate_case: true
     word: true
@@ -557,16 +581,14 @@ matches:
     replace: "⇋$|$"
     propagate_case: true
 
-
-  - trigger: "e2."
+  - trigger: ":e2"
     replace: "estradiol"
     propagate_case: true
 
-
-  - trigger: ":prog"
+  - triggers: [":p4","p4"]
     replace: "progesterone"
     propagate_case: true
-
+    word: true
 
   - trigger: ":gag"
     replace: "glycosaminoglycan"
@@ -585,9 +607,10 @@ matches:
     replace: "thrombin"
     propagate_case: true
 
-  - trigger: "prosg"
+  - triggers: ["prosg", "pglan", "pgland"]
     replace: "prostaglandin"
     propagate_case: true
+    word: true
 
   - trigger: ":pgf"
     replace: "platelet-growth factor"
@@ -656,6 +679,7 @@ matches:
   - trigger: ":ret"
     replace: "reticulocyte|$|$"
     propagate_case: true
+    word: true
 
   - trigger: ":t2dm"
     replace: "type II diabetes mellitus"
@@ -757,6 +781,7 @@ matches:
   - triggers: [":5ht", "ston"]
     replace: "seroton$|$"
     propagate_case: true
+    word: true
 
   - triggers: ["dop", ":da:", "damin"]
     replace: "dopamine$|$"
@@ -885,6 +910,7 @@ matches:
     replace: "prognos$|$"
     propagate_case: true
     uppercase_style: "capitalize_words"
+    word: true
 
   - trigger: ":ddx"
     replace: "differential diagnosis"
@@ -915,24 +941,25 @@ matches:
     propagate_case: true
     uppercase_style: "capitalize_words"
 
-  - trigger: ":jt"
-    replace: "joint"
+  - trigger: "j."
+    replace: "joint$|$"
     propagate_case: true
+    word: true
 
-  - trigger: "rheum.a"
+  - triggers: ["rarth", "rheuma", "rart"]
     replace: "rheumatoid arthritis"
     propagate_case: true
     uppercase_style: "capitalize_words"
     word: true
 
-  - trigger: ":anksp"
-    replace: "ankylosing Spondylitis"
-    propagate_case: true
-    uppercase_style: "capitalize_words"
-
   - trigger: ":vert"
     replace: "vertebrae"
     propagate_case: true
+
+  - trigger: ":ibp"
+    replace: "inflammatory back pain"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
 
   - trigger: ":lbp"
     replace: "lower back pain"
@@ -968,9 +995,10 @@ matches:
     replace: "lateral collateral ligament"
     propagate_case: true
 
-  - trigger: ":l."
-    replace: "ligament"
+  - trigger: "lig."
+    replace: "ligament$|$"
     propagate_case: true
+    word: true
 
   - trigger: ":n/v"
     replace: "nausea and vomiting"
@@ -2119,11 +2147,10 @@ matches:
     word: true
     uppercase_style: "capitalize_words"
 
-  - trigger: "np."
-    replace: "nasopharynx"
+  - trigger: "np"
+    replace: "nasopharyn$|$"
     propagate_case: true
     word: true
-    uppercase_style: "capitalize_words"
 
   - triggers: ["unil", "1l", "1lat", "unilat"]
     replace: "unilateral$|$"
@@ -2155,7 +2182,13 @@ matches:
     word: true
     uppercase_style: "capitalize_words"
 
-      # Slash Triggers
+      # /* SLASH TRIGGERS START
+
+  - trigger: "b/t"
+    replace: "between"
+    propagate_case: true
+    word: true
+    uppercase_style: "capitalize_words"
 
   - trigger: "p/w"
     replace: "present with"
@@ -2305,8 +2338,17 @@ matches:
     replace: "contraindicated"
     propagate_case: true
     word: true
-#     SLASH FILL ENDS */
 
+  - triggers: ["a/o/t", "a.o.t"]
+    replace: "as opposed to"
+    propagate_case: true
+    word: true
+
+
+
+    #  SLASH FILL ENDS */
+
+# High-Yield Expansions
   - trigger: "invi"
     replace: "involving"
     propagate_case: true
@@ -2325,7 +2367,7 @@ matches:
     word: true
     uppercase_style: "capitalize_words"
 
-  - trigger: "ankspon"
+  - triggers: ["ankspon", "aspon"]
     replace: "ankylosing spondylitis"
     propagate_case: true
     word: true
@@ -2336,10 +2378,6 @@ matches:
     propagate_case: true
     word: true
     uppercase_style: "capitalize_words"
-
-  - trigger: ":think"
-    replace: "🤔"
-    propagate_case: true
 
   - trigger: "carc"
     replace: "carcinoma$|$"
@@ -2359,27 +2397,267 @@ matches:
     word: true
     uppercase_style: "capitalize_words"
 
-  - triggers: ["pnpath", "pneurop"]
+  - triggers: ["pnpath", "pneuro"]
     replace: "peripheral neuropathy"
     propagate_case: true
     word: true
     uppercase_style: "capitalize_words"
 
-  - trigger: "defic"
+  - triggers: ["defic", "defi"]
     replace: "deficiency"
     propagate_case: true
     word: true
     uppercase_style: "capitalize_words"
 
-  - trigger: "inhxn"
-    replace: "inhibition"
+  - triggers: ["inhib", "inhi"]
+    replace: "inhibit$|$"
     propagate_case: true
     word: true
     uppercase_style: "capitalize_words"
 
-  - trigger: "hepsplenmeg"
+  - triggers: ["hepsplenmeg", "hsm", "hsmeg"]
     replace: "hepatosplenomegaly"
     propagate_case: true
     word: true
     uppercase_style: "capitalize_words"
 
+        # Days, Weeks, Months shorthand.
+  - trigger: ":1/12"
+    replace: "one month$|$"
+    propagate_case: true
+
+  - trigger: ":2/12"
+    replace: "two month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":3/12"
+    replace: "three month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":4/12$|$"
+    replace: "four month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":5/12"
+    replace: "five month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":6/12"
+    replace: "six month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":7/12"
+    replace: "seven month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":8/12"
+    replace: "eight month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":9/12"
+    replace: "nine month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":10/12"
+    replace: "ten month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":11/12"
+    replace: "11 month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":12/12"
+    replace: "12 month$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":1/52"
+    replace: "one week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":2/52"
+    replace: "two week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":3/52"
+    replace: "three week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":4/52"
+    replace: "four week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":5/52"
+    replace: "five week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":6/52"
+    replace: "six week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":7/52"
+    replace: "seven week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":8/52"
+    replace: "eight week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":9/52"
+    replace: "nine week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":10/52"
+    replace: "10 week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":11/52"
+    replace: "12 week$|$"
+    propagate_case: true
+    uppercase_style: "capitalize_words"
+
+  - trigger: ":1/7"
+    replace: "one day"
+    propagate_case: true
+
+  - trigger: ":2/7"
+    replace: "two day"
+    propagate_case: true
+
+  - trigger: ":3/7"
+    replace: "three day"
+    propagate_case: true
+
+  - trigger: ":4/7"
+    replace: "four day"
+    propagate_case: true
+
+  - trigger: ":5/7"
+    replace: "five day"
+    propagate_case: true
+
+  - trigger: ":6/7"
+    replace: "six day"
+    propagate_case: true
+
+  - trigger: ":7/7"
+    replace: "seven day"
+    propagate_case: true
+      
+    # General / Clinical high-yield
+
+  - trigger: "laden"
+    replace: "lymphadenopathy"
+    propagate_case: true
+    word: true
+
+  - trigger: "t1hs"
+    replace: "type I hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "t1hs"
+    replace: "type I hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "t1hs"
+    replace: "type I hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "t2hs"
+    replace: "type IV hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "t3hs"
+    replace: "type IV hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "t4hs"
+    replace: "type IV hypersensitivity"
+    propagate_case: true
+    word: true
+
+  - trigger: "bdil"
+    replace: "bronchodilation"
+    propagate_case: true
+    word: true
+
+  - trigger: "vdil"
+    replace: "vasodilatation"
+    propagate_case: true
+    word: true
+
+  - trigger: "vcon"
+    replace: "vasoconstriction"
+    propagate_case: true
+    word: true
+
+  - trigger: "ascl"
+    replace: "arteriosclerosis"
+    propagate_case: true
+    word: true
+
+  - trigger: "aolo"
+    replace: "arteriolosclerosis"
+    propagate_case: true
+    word: true
+
+  - trigger: "ggenl"
+    replace: "glycogenolysis"
+    propagate_case: true
+    word: true
+
+  - trigger: "ggen"
+    replace: "glycogen"
+    propagate_case: true
+    word: true
+
+  - trigger: "plet"
+    replace: "platelet"
+    propagate_case: true
+    word: true
+
+  - trigger: "agxn"
+    replace: "aggregation"
+    propagate_case: true
+    word: true
+
+  - trigger: "bcon"
+    replace: "bronchoconstriction"
+    propagate_case: true
+    word: true
+
+  - trigger: "bcon"
+    replace: "bronchoconstriction"
+    propagate_case: true
+    word: true
+    # General NON-Clinical but universally useful expansions
+
+  - trigger: "wrt"
+    replace: "with regard to"
+    propagate_case: true
+    word: true
