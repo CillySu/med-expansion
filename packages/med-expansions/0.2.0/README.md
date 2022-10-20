@@ -8,6 +8,7 @@ Some acronyms which can reasonably be used in their either unexpanded or in thei
 Areas which are well-covered as of today in this package are bacteria, anatomy, pathology. More will be added as I cover more content in college. Commits are welcome!
 Areas needing work are clinical disciplines as well as nonbacterial microbiology.
 
+##Bacteria
 HOW-TO USE:
 In almost all cases, the trigger for the bacterial species will be four characters long.
 For the full name of the bacteria (ie — Staphylococcus aureus as opposed to the shortened S. aureus) use the FIRST LETTER of the GENUS followed by the first three letters of the species.
@@ -134,6 +135,34 @@ For the SHORTENED name (ie —  B. pertussis as opposed to Bordetella pertussis)
 | V. cholerae                  | v.cho or v.chol              |
 | Vibrio cholerae              | vcho or vchol                |
 
-
 † — These stray somewhat from the rule of "first letter from genus followed by first three letters of species"
 Note that _pneumoniae_ species accept either *pne or *pneu 
+
+##Viruses
+|          Expansion           |      Viruses       |
+|:----------------------------:|:------------------:|
+|          Adenovirus          | anov, adenov, adev |
+|          Arenavirus          |       arenav       |
+|          Calcivirus          |        cciv        |
+|        Coronaviridae         |        crov        |
+|        Coxsackievirus        |     csav, coxv     |
+|       Cytomegalovirus        |     :cmv, cmev     |
+|      Epstein-Barr Virus      |     :ebv, ebav     |
+|          Filovirus           |       filov        |
+|          Flavivirus          |        fviv        |
+|     Herpes Simplex Virus     |     :hsv, hsev     |
+|      Human Herpesvirus       |     :hhv, hhev     |
+| Human Immunodeficiency Virus |     himv, :hiv     |
+|        Orthomyxovirus        |     omyv, :omv     |
+|        Papillomavirus        |     pilv, papv     |
+|        Paramyxovirus         |        pmyv        |
+|         Picornavirus         |        pcov        |
+|          Poliovirus          | pliv, polv, poliov |
+|         Polyomavirus         |        pomv        |
+|           Poxvirus           |        poxv        |
+|           Reovirus           |        reov        |
+|          Rhinovirus          |    rnov, rhinov    |
+|          Togavirus           |       togav        |
+|    Varicella Zoster Virus    |     :vzv, vzov     |
+|:----------------------------:|:------------------:|
+
